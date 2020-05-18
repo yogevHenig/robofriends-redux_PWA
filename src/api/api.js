@@ -1,2 +1,2 @@
 export const apiCall = (link) =>
-  fetch(link).then(response => response.json())
+  fetch('https://cors-anywhere.herokuapp.com/' + link).then(response => response.json())
