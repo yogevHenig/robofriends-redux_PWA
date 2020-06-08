@@ -26,8 +26,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "precommit": "pretty-quick --staged"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -49,5 +48,10 @@
     "enzyme-adapter-react-16": "^1.15.2",
     "prettier": "2.0.5",
     "redux-mock-store": "^1.5.4"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
   }
 }
